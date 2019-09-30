@@ -26,9 +26,9 @@ function updateResult(value){
 }
 
 function calculate(){
-  const items = parseInt(document.getElementById("itemsPerBag"));
-  const bagCount = parseInt(document.getElementById("bags"));
-  const calculatedTotal = items * bagCount;
+  const items = parseInt(document.getElementById("itemsPerBag").value);
+  const bagCount = parseInt(document.getElementById("bags").value);
+  const calculatedTotal = parseInt(items * bagCount);
   updateResult(calculatedTotal);
 }
 
